@@ -1,0 +1,91 @@
+body {
+  background-image: url(Image.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.firstfon, .secondfon, .thirdfon, .fourthfon {
+  backdrop-filter: blur(10px);
+}
+
+.firstfon {
+  background-color: rgba(182, 172, 104, 0.227);
+  color: #dfd080;
+  padding: 10px;
+  text-align: center;
+}
+
+.secondfon {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.375);
+}
+
+.secondfon a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.secondfon a:hover {
+  transition: .3s;
+  border-radius: 10px;
+  background-color: rgba(182, 172, 104, 0.137);
+  color: #b6ac68;
+}
+
+.thirdfon {
+  color: rgb(218, 218, 218);
+  background-color: rgba(51, 51, 51, 0.375);
+  padding: 20px;
+  margin: 1%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.fourthfon {
+  background-color: rgba(151, 142, 85, 0.267);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.one {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+
+}
+img {
+  
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+@media (max-width: 540px), (max-width: 430px), (max-width: 414px), (max-width: 412px), (max-width: 390px), (max-width: 375px), (max-width: 360px), (max-width: 280px) {
+  .secondfon {
+      flex-direction: column;
+  }
+
+  .thirdfon {
+      margin: 5% auto;
+      width: 90%;
+  }
+.one {
+  width: 100%;
+  height: auto;
+}
+  img {
+      width: 100%;
+      height: auto;
+  }
+}
